@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 MERCH</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Incluir el CSS de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><h1><span>F1</span>   MERCH</h1></a>
+    </header>
+ 
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="datatable.html">Datatable</a>
+    </nav>
+
+    <main class="contenedor">
+        <table id="productosTable" class="display">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Marca</th>
+                    <th>Tipo</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Red Bull Racing</td>
+                    <td>$120 USD</td>
+                    <td>Castore</td>
+                    <td>Jersey RB</td>
+                </tr>
+                <tr>
+                    <td>Aston Martin</td>
+                    <td>$100 USD</td>
+                    <td>Castore</td>
+                    <td>Jersey AM</td>
+                </tr>
+                <tr>
+                    <td>Ferrari Leclerc</td>
+                    <td>$145 USD</td>
+                    <td>Puma</td>
+                    <td>Jersey CL</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir el JavaScript de DataTables -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- Incluir tu archivo JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

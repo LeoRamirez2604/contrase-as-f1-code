@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - F1 MERCH</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><h1><span>F1</span><br>MERCH</h1></a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="datatable.html">Datatable</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="carrito.html">
+            <img src="img/shopping-cart.png" alt="Carrito de compras" class="icono-carrito">
+        </a>
+    </nav>
+
+    <main class="contenedor">
+        <h2>Carrito de Compras</h2>
+        <div class="carrito-items">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </div>
+        <div class="carrito-total">
+            <p>Total: $<span id="total">0</span></p>
+        </div>
+        <button id="vaciar-carrito" class="boton">Vaciar Carrito</button>
+        <button id="calcular-total" class="boton">Calcular Total</button>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">F1 MERCH - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="carrito.js"></script>
+    <script src="eventos.js"></script> <!-- Asegúrate de que este archivo contenga la lógica necesaria -->
+</body>
+</html>

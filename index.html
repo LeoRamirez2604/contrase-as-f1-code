@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 MERCH</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-title">Member Login</h2>
+            <form id="loginForm">
+                <label class="login-label" for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <small id="usernameError" class="error-message"></small>
+
+                <label class="login-label" for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small id="passwordError" class="error-message"></small>
+
+                <button type="submit" class="login-button">Login</button>
+            </form>
+
+            <!-- Enlace para recuperación de cuenta -->
+            <p><a href="#" id="forgotPasswordLink">¿Olvidaste tu contraseña?</a></p>
+
+            <!-- Formulario de recuperación de contraseña -->
+            <div id="forgotPasswordForm" class="hidden">
+                <label class="login-label" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small id="emailError" class="error-message"></small>
+                <button type="submit" class="login-button">Enviar enlace de recuperación</button>
+                <p><a href="#" id="backToLoginLink">Volver al login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="index.html"><h1><span>F1</span><br>MERCH</h1></a>
+    </header>
+
+    <nav class="navegacion">
+        <a href="index.html" class="navegacion__enlace boton">Tienda</a>
+        <a href="datatable.html" class="navegacion__enlace boton">Datatable</a>
+        <a href="carrito.html" class="navegacion__enlace boton">Carrito de compras</a>
+        <button id="cerrarSesionBtn" class="cerrar-sesion-boton">Cerrar sesión</button>
+    </nav>
+
+    <main class="contenedor">
+        <div class="grid">
+            <!-- Productos -->
+            <div class="producto">
+                <img class="producto__imagen" src="img/Leclerc.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Ferrari Leclerc</p>
+                    <p class="producto__precio">$145</p>
+                </div>
+                <button class="agregar-carrito" data-nombre="Ferrari Leclerc" data-precio="145">Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/Aston Martin.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Aston Martin</p>
+                    <p class="producto__precio">$100</p>
+                </div>
+                <button class="agregar-carrito" data-nombre="Aston Martin" data-precio="100">Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/Red Bull.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Red Bull Racing</p>
+                    <p class="producto__precio">$120</p>
+                </div>
+                <button class="agregar-carrito" data-nombre="Red Bull" data-precio="120">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Botones para manejar el carrito -->
+        <div class="carrito-controles">
+            <button id="mostrar-carrito" class="boton">Mostrar Productos en el Carrito</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">F1 TODOS LOS DERECHOS RESERVADOS - LEONARDO RAMIREZ.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="eventos.js"></script>
+    <script src="login.js"></script> <!-- Archivo de login -->
+    <script src="validacionAcceso.js"></script> <!-- Validación de acceso -->
+</body>
+</html>
